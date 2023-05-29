@@ -34,7 +34,7 @@ app.use((err, _req, res, _next) => {
   res.status(status).json({ message });
 });
 
-connectDB("mongodb://127.0.0.1:27017/test-db")
+connectDB("mongodb://127.0.0.1:27017/attendance-db")
   .then(() => {
     console.log("Database Connected");
     app.listen(4000, () => {
@@ -42,5 +42,3 @@ connectDB("mongodb://127.0.0.1:27017/test-db")
     });
   })
   .catch((e) => console.log(e));
-
-// attendance-dbv
