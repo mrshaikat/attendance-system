@@ -1,9 +1,24 @@
-### Get Users/users
+### Auth Routes
 
-### Get user by id/users/userId
+- **POST** auth/login
+- **POST** auth/register
 
-### create User/users
+### User Routes
 
-### Update user
+- **GET** users/userId
+- **PATCH** users/userId
+- **PUT** users/userId
+- **DELETE** users/userId
+- **POST** users/
+- **GET** users/
 
-### Delete User
+### Admin attendance Routes
+
+- **GET** admin/attendance/enable
+- **GET** admin/attendance/status
+- **GET** admin/attendance/disable
+
+### Student attendance Routes
+
+- **GET** student/attendance/status
+- **GET** admin/attendance/id

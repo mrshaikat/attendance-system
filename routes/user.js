@@ -22,6 +22,12 @@ router.get("/:userId", userController.getUserByID);
 router.patch("/:userId", userController.patchUserById);
 
 /**
+ * Update user by id
+ * @method PUT
+ */
+router.put('/:userId', userController.putUserById);
+
+/**
  * Delete User
  */
 router.delete("/:userId", userController.deleteUserById);
