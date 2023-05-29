@@ -1,8 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-
-function connectDB(connectionStr){
-    return mongoose.connect(connectionStr);
+function connectDB(connectionStr) {
+  return mongoose.connect(connectionStr);
 }
 
-module.exports = connectDB
+module.exports = connectDB;

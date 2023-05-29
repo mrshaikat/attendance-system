@@ -1,4 +1,4 @@
-const { model, Schema } = require('mongoose');
+const { model, Schema } = require("mongoose");
 
 const userSchema = new Schema({
   name: {
@@ -19,26 +19,24 @@ const userSchema = new Schema({
   },
   password: {
     type: String,
-    minlength: [6, 'Password is too short'],
+    minlength: [6, "Password is too short"],
     required: true,
   },
   roles: {
     type: [String],
     required: true,
-    default: ['STUDENT'],
+    default: ["STUDENT"],
   },
   accountStatus: {
     type: String,
-    enum: ['PENDING', 'ACTIVE', 'REJECTED'],
-    default: 'PENDING',
+    enum: ["PENDING", "ACTIVE", "REJECTED"],
+    default: "PENDING",
     required: true,
   },
 });
 
-const User = model('User', userSchema);
+const User = model("User", userSchema);
 
 module.exports = User;
-
-
 
 // https://mongoosejs.com/api/doucument
